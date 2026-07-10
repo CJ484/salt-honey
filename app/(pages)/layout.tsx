@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/";
+import { Cormorant_Garamond, Allura, Lato } from "next/font/google";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
@@ -14,6 +15,22 @@ export const metadata: Metadata = {
   },
 };
 
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-cormorant-garamond",
+});
+const allura = Allura({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-allura",
+});
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "700", "900"],
+  variable: "--font-lato",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -21,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="relative">
+      <body className={`relative ${cormorantGaramond.variable} ${allura.variable} ${lato.variable}`}>
         <Header />
         {children}
       </body>
