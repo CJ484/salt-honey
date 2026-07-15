@@ -11,3 +11,23 @@ export const SOCIAL_LINKS = {
         url: 'https://www.tiktok.com/@saltandhoneycaffe',
     },
 }
+
+export const LINKS = [
+    {
+      label: "Home",
+      href: "/",
+    },
+    {
+      label: "Menu",
+      href: "#menu",
+    },
+    {
+      label: "About",
+      href: "#about",
+    },
+    {
+      label: "Contact",
+      href: "#visit",
+    },
+  ];
+  
