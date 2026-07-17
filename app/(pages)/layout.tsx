@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Header } from "@/components/";
+import { Header, Footer } from "@/components/index";
 import { Cormorant_Garamond, Allura, Lato } from "next/font/google";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Salt & Honey Cafe",
-  description: "Salt & Honey Cafe is a cafe that serves coffee, tea, and other beverages.",
-  icons: {
-    icon: "/favicon.ico",
+  title: {
+    default: "Salt & Honey Cafe",
+    template: "%s | Salt & Honey Cafe",
   },
+  description: "Salt & Honey Cafe is a cafe that serves coffee, tea, and other beverages. Located in the heart of Sea Cliff Avenue, Sea Cliff, NY 11579",
   openGraph: {
     title: "Salt & Honey Cafe",
-    description: "Salt & Honey Cafe is a cafe that serves coffee, tea, and other beverages.",
+    description: "Salt & Honey Cafe is a cafe that serves coffee, tea, and other beverages. Located in the heart of Sea Cliff Avenue, Sea Cliff, NY 11579",
   },
 };
 
@@ -41,6 +41,7 @@ export default function RootLayout({
       <body className={`relative ${cormorantGaramond.variable} ${allura.variable} ${lato.variable}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
