@@ -30,9 +30,9 @@ export default function Header() {
           }`}
         >
           <div className="flex items-center justify-between gap-4 w-full max-w-[45%]">
-            <a href="/" className="flex items-center gap-2 text-foreground-brand font-semibold">
+            <a href="/" className="aspect-square h-10 md:h-16 lg:h-20">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/svg/saltandHoneyLogoSmall.svg" alt="Salt & Honey Logo" className="lg:w-20 lg:h-20 sm:w-12 sm:h-12 w-10 h-10" />
+              <img src="/svg/saltandHoneyLogoSmall.svg" alt="Salt & Honey Logo" />
             </a>
 
             <div className="hidden md:flex items-center gap-8 px-4">
