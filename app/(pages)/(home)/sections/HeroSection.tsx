@@ -135,11 +135,14 @@ export default function HeroSection() {
         />
         <div data-hero-front className="mx-auto absolute inset-0 min-h-[100svh] z-3">
           {/* Main Letter Logo */}
-          <div data-main-group="front" className="top-0 right-10 absolute w-[calc(100vw/2)]">
+          <div
+            data-main-group="front"
+            className="absolute right-[-6vw] top-[12svh] w-[90vw] sm:right-0 sm:top-[8svh] sm:w-[75vw] md:right-10 md:top-0 md:w-[50vw]"
+          >
 
 
             {/* Front copy: white */}
-            <Image data-main-logo="front" src="/svg/main-letter-logo-transparent.svg" alt="Main Letter Logo" width={100} height={100} style={{ filter: brownFilter, }} className="absolute top-0 left-0 aspect-[16/9] w-[calc(100vw/2)] z-4" />
+            <Image data-main-logo="front" src="/svg/main-letter-logo-transparent.svg" alt="Main Letter Logo" width={100} height={100} style={{ filter: brownFilter, }} className="absolute left-0 top-0 z-4 aspect-[16/9] w-full" />
           </div>
           {/* Coffee Pour */}
 
@@ -154,7 +157,10 @@ export default function HeroSection() {
         <Image data-hero-pour src="/images/male-s-hand-pouring-dark-liquid-into-glass-held-by-female-with-white-background.png" alt="Coffee Pour" fill priority sizes="100vw" className="absolute top-10 right-0 object-cover z-2" />
         <div data-hero-back className="mx-auto absolute inset-0 min-h-[100svh] z-1">
           {/* Back copy: tinted, offset down-right for depth */}
-          <div data-main-group="back" className="top-0 right-10 absolute w-[calc(100vw/2)]">           
+          <div
+            data-main-group="back"
+            className="absolute right-[-6vw] top-[12svh] w-[90vw] sm:right-0 sm:top-[8svh] sm:w-[75vw] md:right-10 md:top-0 md:w-[50vw]"
+          >
             <Image
               src="/svg/main-letter-logo.svg"
               alt=""
@@ -165,7 +171,7 @@ export default function HeroSection() {
               style={{
                 filter: brownFilter,
               }}
-              className="absolute top-0 left-0 aspect-[16/9] w-[calc(100vw/2)] z-2"
+              className="absolute left-0 top-0 z-2 aspect-[16/9] w-full"
             />
           </div>
           <div data-ny-group="back" className="absolute bottom-0 left-10 w-[calc(100vw/2)]">
